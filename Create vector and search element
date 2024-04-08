@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> vec = {2, 4, 6, 8, 10};
+    int searchElement = 4;
+    bool found = false;
+
+    for (int i = 0; i < vec.size(); ++i) {
+        if (vec[i] == searchElement) {
+            found = true;
+            break;
+        }
+    }
+
+    if (found) {
+        std::cout << "Element found in the vector." << std::endl;
+    } else {
+        std::cout << "Element not found in the vector." << std::endl;
+    }
+
+    return 0;
+}
